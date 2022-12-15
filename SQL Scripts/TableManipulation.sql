@@ -52,5 +52,6 @@ CREATE TABLE student (
     major varchar(20),
     PRIMARY KEY (student_id)
 );
-
+INSERT INTO student(student_name, major) VALUES('Jack', 'Biology');
+INSERT INTO student(student_name, major) VALUES('Kate', 'Biology');
 
