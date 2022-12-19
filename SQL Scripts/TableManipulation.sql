@@ -1,3 +1,5 @@
+
+
 DROP TABLE student;
 
 CREATE TABLE student (
@@ -55,3 +57,20 @@ CREATE TABLE student (
 INSERT INTO student(student_name, major) VALUES('Jack', 'Biology');
 INSERT INTO student(student_name, major) VALUES('Kate', 'Biology');
 
+-- UPDATE and DELETE
+UPDATE student
+SET major = 'Bio'
+WHERE major = 'Biology';
+
+UPDATE student
+SET major = 'Bio Chem'
+WHERE major = 'Biology' OR major = 'Chemistry';
+
+UPDATE student
+SET major = 'undecided';
+
+-- DELETEs all the rows form the table
+DELETE FROM student;
+
+DELETE FROM student
+WHERE major = 'Biology';
