@@ -74,3 +74,30 @@ DELETE FROM student;
 
 DELETE FROM student
 WHERE major = 'Biology';
+
+-- BASIC QUERIES
+SELECT * FROM student
+WHERE major = 'Biology';
+
+-- By default in acending oder
+SELECT student.student_name
+FROM student
+WHERE major = 'Biology'
+ORDER BY student_name;
+
+-- Keyword DESC in decending order
+SELECT student.student_name
+FROM student
+WHERE major = 'Biology'
+ORDER BY student_name DESC;
+
+-- Keyword DESC in ascending order
+SELECT student.student_name
+FROM student
+WHERE major = 'Biology'
+ORDER BY student_name ASC;
+
+-- Multi column order, orders by major and then student_id
+SELECT *
+FROM student
+ORDER BY major, student_id;
