@@ -98,6 +98,21 @@ WHERE major = 'Biology'
 ORDER BY student_name ASC;
 
 -- Multi column order, orders by major and then student_id
+-- LIMIT limits the number of rows that are returned by the query
 SELECT *
 FROM student
-ORDER BY major, student_id;
+ORDER BY major, student_id
+LIMIT 2;
+
+-- Comparison operators <, >, <=, >=, AND, OR
+SELECT student_name, major
+FROM student
+WHERE student_Id <= 3 and student_name <> 'jack';
+
+-- Multiple values
+SELECT *
+FROM student
+WHERE student_name IN ('Claire', 'Kate', 'Mike');
+
+
+
