@@ -120,3 +120,7 @@ INSERT INTO works_with VALUES(102, 406, 15000);
 INSERT INTO works_with VALUES(105, 406, 130000);
 
 SELECT * FROM branch;
+
+SELECT first_name, last_name, salary, branch_id 
+FROM employee
+WHERE salary >= 60000 AND branch_id = 2;
